@@ -2,23 +2,15 @@
 
 name: Placeholder
 
-on: push
+on: 
+  push:
+    path:
+      - dev/*
 
 jobs:
-  init:
+  build_dev:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a one-line script
-        run: echo Hello, world!
-  myjob:
-    needs: init
-    runs-on: ubuntu-latest
-    steps:
-      - name: echo something nice
-        run: echo 'init was success'
-  myjob2:
-    needs: myjob
-    runs-on: ubuntu-latest
-    steps:
-      - name: echo very good ob
-        run: echo 'very good job'
+      - name: Dev actions
+        run: echo 'This is a dev action'
+
