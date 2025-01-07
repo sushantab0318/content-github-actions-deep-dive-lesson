@@ -1,13 +1,14 @@
 name: Deploy my lambda function
 on:
   push:
-    paths: 
-      - prod/*
+    branches: 
+      - main
 jobs:
-  build_prod:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Prod actions
-        run: echo 'This is a production action'
-      -
+      - name: echo Hello from Action 1
+        run: echo 'Hello from Action1'
+      - name: echo Hello from Action2
+        run: echo 'Hello from Action2'
       
