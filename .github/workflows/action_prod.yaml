@@ -5,7 +5,7 @@ name: Prod actions
 on: 
   push:
     paths:
-      - prod/**
+      - 'prod/**'
 
 jobs:
   build_prod:
