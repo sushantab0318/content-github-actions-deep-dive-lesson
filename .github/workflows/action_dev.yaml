@@ -1,11 +1,11 @@
 # This is a placeholder so actions won't default to a getting started page
 
-name: Placeholder
+name: Dev actions
 
 on: 
   push:
-    path:
-      - dev/*
+    paths:
+      - 'dev/**'
 
 jobs:
   build_dev:
