@@ -1,14 +1,16 @@
-name: Deploy my lambda function
-on:
+# This is a placeholder so actions won't default to a getting started page
+
+name: Prod actions
+
+on: 
   push:
-    branches: 
-      - main
+    paths:
+      - prod/**
+
 jobs:
-  build:
+  build_prod:
     runs-on: ubuntu-latest
     steps:
-      - name: echo Hello from Action 1
-        run: echo 'Hello from Action1'
-      - name: echo Hello from Action2
-        run: echo 'Hello from Action2'
-      
+      - name: prod actions
+        run: echo 'This is a prod action'
+
