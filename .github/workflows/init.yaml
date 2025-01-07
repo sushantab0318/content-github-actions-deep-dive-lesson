@@ -10,3 +10,9 @@ jobs:
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
+  myjob:
+    needs: init
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo something nice
+        run: echo 'init was success'
