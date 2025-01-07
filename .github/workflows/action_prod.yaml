@@ -1,0 +1,16 @@
+# This is a placeholder so actions won't default to a getting started page
+
+name: Prod actions
+
+on: 
+  push:
+    paths:
+      - 'prod/**'
+
+jobs:
+  build_prod:
+    runs-on: ubuntu-latest
+    steps:
+      - name: prod actions
+        run: echo 'This is a prod action'
+

@@ -1,0 +1,16 @@
+# This is a placeholder so actions won't default to a getting started page
+
+name: Dev actions
+
+on: 
+  push:
+    paths:
+      - 'dev/**'
+
+jobs:
+  build_dev:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dev actions
+        run: echo 'This is a dev action'
+
